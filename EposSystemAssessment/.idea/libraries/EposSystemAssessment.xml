@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EposSystemAssessment">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/EposSystemAssessment.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
