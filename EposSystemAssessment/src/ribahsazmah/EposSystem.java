@@ -51,6 +51,7 @@ public class EposSystem extends javax.swing.JFrame {
      */
     public EposSystem() 
     {
+        
         initComponents();
     }
 
@@ -296,6 +297,7 @@ public class EposSystem extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Epos System");
         setBackground(new java.awt.Color(0, 0, 0));
+        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -399,7 +401,6 @@ public class EposSystem extends javax.swing.JFrame {
         pnlOrder.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 590, 240, 110));
         pnlOrder.add(txtOrderPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 700, 240, 60));
 
-        lblOrderInfo1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lblOrderInfo1.setText("ⓘ Choose the Quantity and the product you want to Add.");
         pnlOrder.add(lblOrderInfo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
 
@@ -2631,6 +2632,7 @@ public class EposSystem extends javax.swing.JFrame {
     
     //User Login function
     public void checkTheLogin(){
+        
         JLabel lblLogin = new JLabel("Employee Number:");
         JTextField login = new JTextField();
         JLabel lblPassword = new JLabel("Password:");
@@ -2718,6 +2720,7 @@ public class EposSystem extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Logged in as Manager\nAccess granted to all areas");
                 entryGranted = true;
                 txtUser.setText(theUser.getRole() + " - " +theUser.getFirstName());
+                
             }
             if (!entryGranted) //entry denied
             {
